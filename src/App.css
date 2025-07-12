@@ -1,0 +1,60 @@
+/* Navbar styling */
+nav {
+  background-color: var(--header-background);
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: var(--hover-color);
+}
+
+/* App container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+button {
+  background-color: var(--link-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}

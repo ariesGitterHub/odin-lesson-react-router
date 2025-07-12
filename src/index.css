@@ -1,0 +1,48 @@
+/* Root CSS variables */
+:root {
+  --background-color: #282c34;
+  --text-color: #fff;
+  --link-color: #61dafb;
+  --header-background: #20232a;
+  --hover-color: #4fa3f7;
+}
+
+/* Global styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Make sure padding and borders don't mess with element size */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* Ensures that all page content has some breathing room */
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Prevents page overflow */
+html, body {
+  width: 100%;
+  height: 100%;
+}
